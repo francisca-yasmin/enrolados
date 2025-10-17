@@ -27,16 +27,13 @@
         &:hover {
             transform: scale(1.05);
             background: $botao-roxo-escuro; 
-            color: #04010f;
+            color: #fff;
         }
 
         &:focus {
             outline: 3px solid #ffd700;
             outline-offset: 3px;
         }
-    
-
-    
 
 }
 @media (max-width: 768px) {
