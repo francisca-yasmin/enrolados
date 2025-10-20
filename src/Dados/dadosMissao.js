@@ -65,4 +65,13 @@ export const missoes = [
     respostaCorreta: "Clean",
     status: 'disponivel'
   }
+    ,
+  {
+    id: 9,
+    titulo: "Conhecimentos Gerais",
+    missao: "O que eu sou?",   
+    descricao: "Um codigo de excelecia tem .... code",
+    respostaCorreta: "Clean",
+    status: 'disponivel'
+  }
 ];
