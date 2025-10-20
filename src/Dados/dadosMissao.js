@@ -3,24 +3,24 @@ export const missoes = [
     id: 1,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",    
-    descricao: "Pessoal, hoje vai ter prova",    
-    respostaCorreta: "Dorival",
+    descricao: "Cadê a autonomia?",    
+    respostaCorreta: "Modesto",
     status: 'disponivel' 
   },
   {
     id: 2,
     titulo: "Conhecimentos Gerais",
-    missao: "Advinha quem eu sou",   
-    descricao: "A bola é minha! Essa frase é conhecida por qual professor(a)?",
-    respostaCorreta: "Marcia",
+    missao: "Programação backend",   
+    descricao: "Qual é o aplicativo que usamos pra testar uma API?",
+    respostaCorreta: "postman",
     status: 'disponivel'
   },
   {
     id: 3,
     titulo: "Conhecimentos Gerais",
-    missao: "Advinha quem eu sou",   
-    descricao: "O que é um projeto? Qual é o professor que relembra esse conceito todas vezes possíveis?",
-    respostaCorreta: "Fernanda",
+    missao: "Professores",   
+    descricao: "Quantos minutos de atraso a Mariany tolera?",
+    respostaCorreta: "nenhum",
     status: 'disponivel'
   },
   {
@@ -61,8 +61,8 @@ export const missoes = [
     id: 8,
     titulo: "Conhecimentos Gerais",
     missao: "O que eu sou?",   
-    descricao: "Um codigo de excelecia tem .... code",
-    respostaCorreta: "Clean",
+    descricao: "QUe horas eu posso voltar (sabendo que são 15 minutos de intervalo)?",
+    respostaCorreta: "9:20",
     status: 'disponivel'
   }
     ,
@@ -70,8 +70,8 @@ export const missoes = [
     id: 9,
     titulo: "Conhecimentos Gerais",
     missao: "O que eu sou?",   
-    descricao: "Um codigo de excelecia tem .... code",
-    respostaCorreta: "Clean",
+    descricao: "A minha única regra é não ter no codigo",
+    respostaCorreta: "ARIA",
     status: 'disponivel'
   }
 ];
