@@ -7,7 +7,8 @@
   transform: translateX(-50%);
   width: 90%;
   max-width: 800px;
-  background: #c2edf7;
+  //background: linear-gradient(135deg, #247ba0, #1a4f8a);
+  background: linear-gradient(135deg, #0a1a2f, #123b70);
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -35,12 +36,55 @@
   margin: 0;
   color: white;
   font-size: 1rem;
+  //list-style: none;
+  //text-decoration: none;
 }
 
 .menu img {
-  width: 100px;
-  height: 60px;
+  width: 102px;
+  height: 62px;
   margin-bottom: 0.5rem;
 }
 
+
+//tablets
+@media (max-width: 768px) {
+  .menu {
+    width: 95%;
+    padding: 0.8rem;
+
+    img {
+      width: 80px;
+    }
+
+    figcaption {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+//celulares
+@media (max-width: 480px) {
+  .menu {
+    bottom: 10px;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+
+    ul {
+      gap: 0.5rem;
+    }
+
+    li {
+      flex: 1 1 60px;
+    }
+
+    img {
+      width: 60px;
+    }
+
+    figcaption {
+      font-size: 0.7rem;
+    }
+  }
+}
 

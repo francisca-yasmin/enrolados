@@ -1,12 +1,12 @@
-$fundo: #04010f;
+$fundo: #000000;
 $claro: #f0ebeb;
 $card:#dcdff2;
 $sombrasBox: 0 4px 10px rgba(0, 0, 0, 0.3);
-$destaque-rosa: #ff3d7f transparent;
-$gradiente-rosa: linear-gradient(135deg, #2f1048, #e4018d);
+$destaque-rosa: #ff1744;
+$gradiente-rosa: linear-gradient(135deg, #cc0000, #660000);//botao iniciar missao
 $foco: #4c0f32;
-$botao-roxo: linear-gradient(135deg, #d1a8e9, #a34ad6);
-$botao-roxo-escuro: linear-gradient(135deg, #e7bbf5, #b43ed8);
+$botao-vermelho: linear-gradient(135deg, #ff1e1e, #b30000);
+$botao-vermelho-escuro: linear-gradient(135deg, #cc0000, #660000);
 $box-fundo: rgba(0, 0, 0, 0.8);
 $borda: 1px solid $fundo;
 

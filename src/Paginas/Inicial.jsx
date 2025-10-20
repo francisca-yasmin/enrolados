@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpg';
+import milles from '../assets/milles.png';
 import { useNavigate } from 'react-router-dom';
 
 export function Inicial() {
@@ -6,7 +6,7 @@ export function Inicial() {
 
   return (
     <main className="inicial">
-      <img src={logo} className="logo" alt="Logo DS GO"  />
+      <img src={milles} className="logo" alt="Logo DS GO"  />
      
       <button onClick={() => navigate('/dsgo')} className='entrar'>
         Entrar

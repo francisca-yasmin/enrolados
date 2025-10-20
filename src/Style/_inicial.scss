@@ -12,7 +12,7 @@
     }
 
     .entrar {
-        background: $botao-roxo;
+        background: $botao-vermelho;
         color: #fff;
         padding: 15px 40px;
         border: none;
@@ -26,7 +26,7 @@
 
         &:hover {
             transform: scale(1.05);
-            background: $botao-roxo-escuro; 
+            background: $botao-vermelho-escuro; 
             color: #fff;
         }
 
