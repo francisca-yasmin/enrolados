@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sucesso from "../assets/win.png";
+import sucesso from "../assets/win_miles.png";
 import erro from "../assets/raios.png";
 
 export function MissaoModal({ missao, onClose, onConcluir }) {
