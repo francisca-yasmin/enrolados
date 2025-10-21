@@ -61,7 +61,7 @@ export const missoes = [
     id: 8,
     titulo: "Conhecimentos Gerais",
     missao: "O que eu sou?",   
-    descricao: "QUe horas eu posso voltar (sabendo que são 15 minutos de intervalo)?",
+    descricao: "Que horas eu posso voltar (sabendo que são 15 minutos de intervalo)? EX:00:00",
     respostaCorreta: "9:20",
     status: 'disponivel'
   }
