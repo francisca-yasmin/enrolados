@@ -10,8 +10,8 @@ export const missoes = [
   {
     id: 2,
     titulo: "Conhecimentos Gerais",
-    missao: "Programação backend",   
-    descricao: "Qual é o aplicativo que usamos pra testar uma API?",
+    missao: "O que eu sou?",   
+    descricao: "Qual é o aplicativo que usamos no senai pra testar uma API?",
     respostaCorreta: "postman",
     status: 'disponivel'
   },
@@ -27,25 +27,25 @@ export const missoes = [
     id: 4,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "Hellllowwwww Sextooouuuuuuuu, é a frase favorita de qual professor?",
-    respostaCorreta: "Mariany",
+    descricao: "Qual aluno é mais provavel de virar um lobisomem?",
+    respostaCorreta: "israel",
     status: 'disponivel'
   },
   {
     id: 5,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "E agora com vocês .... os patronos do conhecimento... Vocês",
-    respostaCorreta: "Israel",
+    descricao: "Se você vier SEM a blusa do senai, você entra?",
+    respostaCorreta: "não",
     status: 'disponivel'
   }
   ,
   {
     id: 6,
     titulo: "Conhecimentos Gerais",
-    missao: "Advinha quem eu sou",   
-    descricao: "Tem contraste? tem placeholder?",
-    respostaCorreta: "Mariany",
+    missao: "O que eu sou?",   
+    descricao: "Qual a primeira coisa que eu preciso importar em um arquivo dart?",
+    respostaCorreta: "dart.io",
     status: 'disponivel'
   },
   {
