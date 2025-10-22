@@ -1,38 +1,54 @@
 import { useState } from "react";
-import { missoes } from '../Dados/dadosMissao';
-import { MissaoCard } from '../Componentes/MissaoCard';
-import { MissaoModal } from '../Componentes/MissaoModal';
+import { missoes } from "../Dados/dadosMissao";
+import { MissaoCard } from "../Componentes/MissaoCard";
+import { MissaoModal } from "../Componentes/MissaoModal";
 
 export function Missao() {
   const [missaoSelecionada, setMissaoSelecionada] = useState(null);
-  const [missoesConcluidas, setMissoesConcluidas] = useState([]); // ✅ novo estado
+  const [missoesConcluidas, setMissoesConcluidas] = useState([]);
 
   const concluirMissao = (id) => {
-    setMissoesConcluidas((prev) => [...prev, id]); // adiciona id no array
-    setMissaoSelecionada(null); // fecha modal
+    setMissoesConcluidas((prev) => [...prev, id]);
+    setMissaoSelecionada(null);
   };
 
   return (
-    <section className='conteiner'>
-      <h2>Missões</h2>
-      <div className="missoes-grid">
-        {missoes.map((m) => (
-          <MissaoCard
-            key={m.id} 
-            missao={m}  
-            onIniciarMissao={setMissaoSelecionada} 
-            concluida={missoesConcluidas.includes(m.id)} 
-          />
-        ))}
-      </div>
+    <main
+      className="conteiner"
+      role="main"
+      aria-label="Seção de missões disponíveis e concluídas"
+    >
+      <section
+        className="missoes-section"
+        aria-labelledby="titulo-missoes"
+      >
+        <h2 id="titulo-missoes">Missões</h2>
 
-      {missaoSelecionada && (
-        <MissaoModal 
-          missao={missaoSelecionada} 
-          onClose={() => setMissaoSelecionada(null)} 
-          onConcluir={() => concluirMissao(missaoSelecionada.id)} 
-        />
-      )}
-    </section>
+        <div
+          className="missoes-grid"
+          role="list"
+          aria-label="Lista de missões disponíveis"
+        >
+          {missoes.map((m) => (
+            <div role="listitem" key={m.id}>
+              <MissaoCard
+                missao={m}
+                onIniciarMissao={setMissaoSelecionada}
+                concluida={missoesConcluidas.includes(m.id)}
+              />
+            </div>
+          ))}
+        </div>
+
+        {missaoSelecionada && (
+          <MissaoModal
+            missao={missaoSelecionada}
+            onClose={() => setMissaoSelecionada(null)}
+            onConcluir={() => concluirMissao(missaoSelecionada.id)}
+            aria-label={`Detalhes da missão: ${missaoSelecionada.titulo}`}
+          />
+        )}
+      </section>
+    </main>
   );
 }

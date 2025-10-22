@@ -6,44 +6,84 @@ import { Link } from 'react-router-dom';
 
 export function Menu() {
   return (
-    <div className="menu">
-      <ul>
+    <nav
+      className="menu"
+      role="navigation"
+      aria-label="Menu principal do jogo DS GO"
+    >
+      <ul className="menu-list">
         <li>
-          <Link to="missao">
+          <Link
+            to="missao"
+            aria-label="Ir para a página de Missões"
+            className="menu-item"
+          >
             <figure>
-              <img src={missao} alt="Missões" />
+              <img
+                src={missao}
+                alt="Ícone de missões"
+                role="img"
+                aria-hidden="true"
+              />
               <figcaption>Missões</figcaption>
             </figure>
           </Link>
         </li>
 
         <li>
-          <Link to="inventario">
+          <Link
+            to="inventario"
+            aria-label="Ir para o inventário de figurinhas"
+            className="menu-item"
+          >
             <figure>
-              <img src={bau} alt="Inventário" />
+              <img
+                src={bau}
+                alt="Ícone de inventário"
+                role="img"
+                aria-hidden="true"
+              />
               <figcaption>Inventário</figcaption>
             </figure>
           </Link>
         </li>
 
         <li>
-          <Link to="geolocalizacao">
+          <Link
+            to="geolocalizacao"
+            aria-label="Abrir mapa de geolocalização"
+            className="menu-item"
+          >
             <figure>
-              <img src={mapa} alt="GeoLocalização" />
+              <img
+                src={mapa}
+                alt="Ícone de geolocalização"
+                role="img"
+                aria-hidden="true"
+              />
               <figcaption>GeoLocalização</figcaption>
             </figure>
           </Link>
         </li>
 
         <li>
-          <Link to="camera">
+          <Link
+            to="camera"
+            aria-label="Abrir câmera"
+            className="menu-item"
+          >
             <figure>
-              <img src={camera} alt="Câmera" />
+              <img
+                src={camera}
+                alt="Ícone de câmera"
+                role="img"
+                aria-hidden="true"
+              />
               <figcaption>Câmera</figcaption>
             </figure>
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
