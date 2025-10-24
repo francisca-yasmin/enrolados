@@ -36,15 +36,26 @@
         }
 
 }
-@media (max-width: 768px) {
+
+   @media (max-width: 768px) {
+    gap: 15px;
+
+    .logo {
+      height: 40%;
+    }
+
     h1 {
-      font-size: 2rem; // título menor em tablet
+      font-size: 2rem;
     }
 
     p {
       font-size: 1rem;
     }
-  }
 
+    .entrar {
+      padding: 12px 30px;
+      font-size: 1rem;
+    }
+  }
 
 }

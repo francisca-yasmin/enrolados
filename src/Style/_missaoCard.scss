@@ -86,3 +86,15 @@
   margin-bottom: 0.5rem;
   color: #6a1b9a;
 }
+
+
+@media (max-width: 768px) {
+  .conteiner {
+    padding: 2rem 1rem;
+  }
+
+  .missao-card {
+    min-height: 200px;
+    padding: 1rem;
+  }
+}

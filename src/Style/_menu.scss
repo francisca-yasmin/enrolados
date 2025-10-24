@@ -47,44 +47,20 @@
 }
 
 
-//tablets
 @media (max-width: 768px) {
   .menu {
-    width: 95%;
-    padding: 0.8rem;
+    width: 90%;
+    padding: 0.4rem;
 
     img {
-      width: 80px;
+      width: 70px;
+      height: 70px;
     }
 
-    figcaption {
-      font-size: 0.8rem;
+    figure {
+      font-size: 0.9rem;
     }
   }
 }
 
-//celulares
-@media (max-width: 480px) {
-  .menu {
-    bottom: 10px;
-    padding: 0.5rem;
-    border-radius: 0.8rem;
-
-    ul {
-      gap: 0.5rem;
-    }
-
-    li {
-      flex: 1 1 60px;
-    }
-
-    img {
-      width: 60px;
-    }
-
-    figcaption {
-      font-size: 0.7rem;
-    }
-  }
-}
 

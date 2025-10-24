@@ -20,4 +20,16 @@
     position: relative;
     z-index: 1;
   }
+
+  @media (max-width: 768px) {
+    background-position: top;
+    
+    &::before {
+      backdrop-filter: blur(1px);
+    }
+
+    > * {
+      padding: 1rem;
+    }
+  }
 }
