@@ -36,8 +36,8 @@
   margin: 0;
   color: white;
   font-size: 1rem;
-  //list-style: none;
-  //text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .menu img {
@@ -46,7 +46,7 @@
   margin-bottom: 0.5rem;
 }
 
-
+/*  Responsividade */
 @media (max-width: 768px) {
   .menu {
     width: 90%;
